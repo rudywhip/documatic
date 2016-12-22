@@ -1,6 +1,6 @@
 require 'rexml/document'
 require 'rexml/attribute'
-require 'zip/zip'
+require 'zip'
 require 'erb'
 require 'fileutils'
 
@@ -16,7 +16,7 @@ module Documatic::OpenDocumentText
     # Documatic::Component, instantiated from the compiled (embedded
     # Ruby) version of 'styles.xml'.
     attr_accessor :styles
-    # The template's JAR file (i.e. an instance of Zip::ZipFile)
+    # The template's JAR file (i.e. an instance of Zip::File)
     attr_accessor :jar
     # The raw contents of 'content.xml'.
     attr_accessor :content_raw
@@ -97,7 +97,7 @@ module Documatic::OpenDocumentText
     
     def initialize(filename)
       @filename = filename
-      @jar = Zip::ZipFile.open(@filename)
+      @jar = Zip::File.open(@filename)
       return true
     end
     
