@@ -9,6 +9,7 @@ Gem::Specification.new do |s|
 
   s.date              = %q{2016-12-22}
   s.homepage          = 'https://github.com/adacosta/documatic'
+  s.authors           = 'original documatic authors + Alan Da Costa'
 
   s.require_paths = ['lib']
   s.files         = Dir['.gitignore', 'LICENSE', 'README', 'Rakefile', 'documatic.gemspec', 'lib/**/*']
