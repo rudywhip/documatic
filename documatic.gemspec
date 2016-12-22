@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'documatic'
-  s.version     = 0.3.0
+  s.version     = '0.3.0'
   s.description = 'An OpenDocument extension for Ruby Reports (Ruport). It is a template-driven formatter that can be used to produce attractive printable documents such as database reports, invoices, letters, faxes and more.'
 
   s.required_ruby_version     = '>= 2.0.0'
